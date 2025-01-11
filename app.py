@@ -10,9 +10,6 @@ cv = pickle.load(open('vectorizer.pkl','rb'))
   # Example image URL
 st.title("📧 SMS Spam Detection")
 st.subheader("Detect whether an email is spam or not spam using Machine Learning.")
-
-
-
 st.write("This app uses a Machine Learning model to analyze email content and classify it as **Spam** or **Not Spam**.")
 
 user_input=st.text_area("✍️Enter an Email to classify",height=100)
@@ -27,8 +24,5 @@ if st.button("Classify"):
              
         else:
              st.warning("🚨 The Email is **spam**!")
-             
-        
-            
-    else:
+      else:
         st.warning("⚠️Please type Email to classify")
